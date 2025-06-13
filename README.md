@@ -26,12 +26,12 @@ Edit `apps/demo-next-app/.env` and set the following variables:
 
 This repository uses private npm packages from the `@callixbrasil` scope. You must provide an authentication token for the npm registry.
 
-- The `.npmrc` file expects the environment variable `CALLIX_SDK_GRUPOVILLELA` to be set with your GitHub Package Registry token.
+- The `.npmrc` file expects the environment variable `CALLIX_SDK_TOKEN` to be set with your GitHub Package Registry token.
 
 **Export your token before installing dependencies:**
 
 ```bash
-export CALLIX_SDK_GRUPOVILLELA=your_github_package_token
+export CALLIX_SDK_TOKEN=your_github_package_token
 ```
 
 Replace `your_github_package_token` with your actual token.
@@ -70,7 +70,7 @@ You can open these files in your browser or text editor to explore the SDK capab
 ## Troubleshooting
 
 - Ensure all required environment variables are set in your `.env` file.
-- Make sure you have exported the `CALLIX_SDK_GRUPOVILLELA` token in your shell before running `npm install`.
+- Make sure you have exported the `CALLIX_SDK_TOKEN` token in your shell before running `npm install`.
 - If you encounter authentication errors with npm, double-check your token and `.npmrc` configuration.
 
 ---
