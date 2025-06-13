@@ -21,8 +21,8 @@ importers:
         specifier: 0.0.1
         version: 0.0.1
       '@callixbrasil/client-sdk-react':
-        specifier: 0.0.1
-        version: 0.0.1(react@19.0.0)
+        specifier: 0.0.2
+        version: 0.0.2(react@19.0.0)
       '@callixbrasil/server-sdk':
         specifier: 0.0.1
         version: 0.0.1
@@ -728,8 +728,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@callixbrasil/client-sdk-react@0.0.1':
-    resolution: {integrity: sha512-xpsca2fWq1n/hfMpI8TDyvc4fjzUT4xnVRWJFRUkRjvvmnbw9w1F1xeuuqzv9qUBTNJoOW54ja3iqhpBzVQOag==, tarball: https://npm.pkg.github.com/download/@callixbrasil/client-sdk-react/0.0.1/cce81946509f923e4b9f7adbe79413cd1a9d805f}
+  '@callixbrasil/client-sdk-react@0.0.2':
+    resolution: {integrity: sha512-JliY7oRveLUGfs3Dr3KVAFznLd2zoVzL8p/Vt70EgrmgOd3Fwe1/7SJx71HPlR+dciCEvF3G+j/XGAyr7NcGlQ==, tarball: https://npm.pkg.github.com/download/@callixbrasil/client-sdk-react/0.0.2/53c2e4f2c7fce881a077212cd9f49d89a7c310a9}
     peerDependencies:
       react: ^19.1.0
 
@@ -5172,7 +5172,7 @@ snapshots:
   '@biomejs/cli-win32-x64@1.9.4':
     optional: true
 
-  '@callixbrasil/client-sdk-react@0.0.1(react@19.0.0)':
+  '@callixbrasil/client-sdk-react@0.0.2(react@19.0.0)':
     dependencies:
       '@callixbrasil/client-sdk': 0.0.1
       bunshi: 2.1.5(react@19.0.0)

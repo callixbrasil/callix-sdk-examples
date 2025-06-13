@@ -1,7 +1,10 @@
 'use client';
 
-import { useCallOperatorAudioOutputMuted, useCallOperatorAudioOutputVolume } from '@callixbrasil/client-sdk-react';
-import { useCallOperatorAudioInputMuted } from '@callixbrasil/client-sdk-react/src/modules/callOperator';
+import {
+  useCallOperatorAudioInputMuted,
+  useCallOperatorAudioOutputMuted,
+  useCallOperatorAudioOutputVolume,
+} from '@callixbrasil/client-sdk-react';
 import { FaMicrophone, FaMicrophoneSlash, FaVolumeDown, FaVolumeMute, FaVolumeOff, FaVolumeUp } from 'react-icons/fa';
 
 export function AudioControls() {
