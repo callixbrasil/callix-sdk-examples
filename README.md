@@ -60,11 +60,13 @@ pnpm run dev
 
 For detailed information about the Callix SDK API and available features, refer to the documentation located in your project at:
 
+You can open these files in your browser or text editor to explore the SDK capabilities, method references, and implementation examples.
+
 ```bash
 apps/demo-next-app/node_modules/@callixbrasil/client-sdk/docs/README.pt-BR.md
 ```
 
-You can open these files in your browser or text editor to explore the SDK capabilities, method references, and implementation examples.
+
 ---
 
 ## Troubleshooting
