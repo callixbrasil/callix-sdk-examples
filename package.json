@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "next:dev": "pnpm run --filter=demo-next-app dev",
+    "react-native:dev": "pnpm run --filter=demo-react-native-app start",
+    "format": "biome format --write .",
+    "checktypes": "pnpm run -r --stream checktypes"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "typescript": "^5.8.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@biomejs/biome",
+      "esbuild",
+      "unrs-resolver"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "lib": ["es2023", "ESNext.Object"],
+    "module": "node16",
+    "target": "es2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node16",
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noFallthroughCasesInSwitch": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "useDefineForClassFields": false
+  }
+}
