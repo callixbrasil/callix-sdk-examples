@@ -6,7 +6,7 @@
     "checktypes": "pnpm run -r --stream checktypes"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
+    "@biomejs/biome": "^2.1.1",
     "typescript": "^5.8.3"
   },
   "pnpm": {

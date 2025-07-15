@@ -1,15 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "files": {
-    "ignore": [
-      "node_modules",
-      "dist",
-      ".pnpm-store",
-      ".vscode",
-      "package.json",
-      "./**/*.svelte"
-    ]
-  },
+  "$schema": "https://biomejs.dev/schemas/2.1.1/schema.json",
   "formatter": {
     "indentStyle": "space",
     "indentWidth": 2,
@@ -37,7 +27,9 @@
         "noUnusedVariables": "warn",
         "useHookAtTopLevel": "error"
       },
-      "performance": {},
+      "performance": {
+        "noBarrelFile": "error"
+      },
       "recommended": true,
       "style": {
         "noNegationElse": "error",
@@ -46,8 +38,22 @@
         "useCollapsedElseIf": "error",
         "useNumberNamespace": "off",
         "useNodejsImportProtocol": "error",
-        "useShorthandArrayType": "warn",
-        "useShorthandAssign": "warn"
+        "useShorthandAssign": "warn",
+        "noParameterAssign": "error",
+        "useAsConstAssertion": "error",
+        "useDefaultParameterLast": "error",
+        "useEnumInitializers": "error",
+        "useSelfClosingElements": "error",
+        "useSingleVarDeclarator": "error",
+        "noUnusedTemplateLiteral": "error",
+        "noInferrableTypes": "error",
+        "noUselessElse": "error",
+        "useConsistentArrayType": {
+          "level": "warn",
+          "options": {
+            "syntax": "shorthand"
+          }
+        }
       },
       "suspicious": {
         "noApproximativeNumericConstant": "warn",
@@ -56,8 +62,12 @@
       }
     }
   },
-  "organizeImports": {
-    "enabled": true
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
   },
   "vcs": {
     "clientKind": "git",
