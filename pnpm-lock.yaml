@@ -18,11 +18,11 @@ importers:
   apps/demo-next-app:
     dependencies:
       '@callixbrasil/client-sdk':
-        specifier: 0.0.1
-        version: 0.0.1
+        specifier: 0.0.3
+        version: 0.0.3
       '@callixbrasil/client-sdk-react':
-        specifier: 0.0.2
-        version: 0.0.2(react@19.0.0)
+        specifier: 0.0.4
+        version: 0.0.4(react@19.0.0)
       '@callixbrasil/server-sdk':
         specifier: 0.0.1
         version: 0.0.1
@@ -728,13 +728,13 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@callixbrasil/client-sdk-react@0.0.2':
-    resolution: {integrity: sha512-JliY7oRveLUGfs3Dr3KVAFznLd2zoVzL8p/Vt70EgrmgOd3Fwe1/7SJx71HPlR+dciCEvF3G+j/XGAyr7NcGlQ==, tarball: https://npm.pkg.github.com/download/@callixbrasil/client-sdk-react/0.0.2/53c2e4f2c7fce881a077212cd9f49d89a7c310a9}
+  '@callixbrasil/client-sdk-react@0.0.4':
+    resolution: {integrity: sha512-bfPvrvyN/fPysX3ofT/B/4F1p9w2ms6AMGWs0dO8unT5sKAff1Fh9zcJjYxtVPz70tQSFXnouZCP+zVaPvLsyw==, tarball: https://npm.pkg.github.com/download/@callixbrasil/client-sdk-react/0.0.4/844852e4ab4eb7df7aa8be408505a25893bf9cfe}
     peerDependencies:
       react: ^19.1.0
 
-  '@callixbrasil/client-sdk@0.0.1':
-    resolution: {integrity: sha512-PvOIeeW9mII1c2Bft7QZJUl1anGOdjb0kWHExxf9KJhIQPSqAOO12iptlNtW06pIK8SHTEMu/Q9DCgGGC0v1lQ==, tarball: https://npm.pkg.github.com/download/@callixbrasil/client-sdk/0.0.1/4b1efe2e26f246b77d0c54b2215e0b3d832b67a9}
+  '@callixbrasil/client-sdk@0.0.3':
+    resolution: {integrity: sha512-Mdi0wEGlFZjtoEVXB407LOUWpX1JUn4RuB0/uJeoNXuxTi4d/hFLZXyC4aEMCGHiimEye/jvVmH77NKLiRfm5Q==, tarball: https://npm.pkg.github.com/download/@callixbrasil/client-sdk/0.0.3/e4fd9f0a2f3821e0ca3347d6d0e506a00146e597}
 
   '@callixbrasil/server-sdk@0.0.1':
     resolution: {integrity: sha512-jEvUlpaelYSdnGU26JsmzmNxLGLmLVQ/vdQuH+zJDg4crVHG1o6iff2i7DXE9PZmoC7I1h5ypHlBbnQQx+RWfQ==, tarball: https://npm.pkg.github.com/download/@callixbrasil/server-sdk/0.0.1/89c68d32b7501c12728bc4b71c0dadcfeee75d1d}
@@ -5172,9 +5172,9 @@ snapshots:
   '@biomejs/cli-win32-x64@2.1.1':
     optional: true
 
-  '@callixbrasil/client-sdk-react@0.0.2(react@19.0.0)':
+  '@callixbrasil/client-sdk-react@0.0.4(react@19.0.0)':
     dependencies:
-      '@callixbrasil/client-sdk': 0.0.1
+      '@callixbrasil/client-sdk': 0.0.3
       bunshi: 2.1.5(react@19.0.0)
       react: 19.0.0
     transitivePeerDependencies:
@@ -5182,7 +5182,7 @@ snapshots:
       - supports-color
       - vue
 
-  '@callixbrasil/client-sdk@0.0.1':
+  '@callixbrasil/client-sdk@0.0.3':
     dependencies:
       axios: 1.9.0
       eventemitter3: 5.0.1

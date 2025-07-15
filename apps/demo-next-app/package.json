@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@callixbrasil/client-sdk": "0.0.1",
-    "@callixbrasil/client-sdk-react": "0.0.2",
+    "@callixbrasil/client-sdk": "0.0.3",
+    "@callixbrasil/client-sdk-react": "0.0.4",
     "@callixbrasil/server-sdk": "0.0.1",
     "@tanstack/react-query": "^5.76.2",
     "axios": "^1.9.0",
