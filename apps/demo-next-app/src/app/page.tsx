@@ -16,6 +16,7 @@ export default function Home() {
         userSessionToken: string;
       };
     },
+    staleTime: Infinity,
   });
 
   const session = queryUserSdkSession.data;
