@@ -1,15 +1,16 @@
 'use client';
-import { useCallOperatorControls, useCallOperatorState } from '@callixbrasil/client-sdk-react';
+
+import { useCallOperatorState } from '@callixbrasil/client-sdk-react';
 import { AudioControls } from './AudioControls';
 import { CallButtons } from './CallButtons';
 import { CallDetails } from './CallDetails';
 import { CallInfoDisplay } from './CallInfoDisplay';
+import { CallManagerAfterCall } from './CallManagerAfterCall';
 import { CallTimer } from './CallTimer';
 import { RingingAnimation } from './RingingAnimation';
 
 export function CallManager() {
   const callOperatorState = useCallOperatorState();
-  const { finishAfterCall } = useCallOperatorControls();
 
   console.log('callOperatorState', callOperatorState);
 
@@ -108,20 +109,7 @@ export function CallManager() {
   }
 
   if (callOperatorState.state === 'afterCall') {
-    return (
-      <div className="flex flex-col items-center justify-center p-8">
-        <div className="bg-gray-50 p-8 rounded-lg shadow-sm text-center">
-          <h2 className="text-xl font-medium mb-2">Call Ended</h2>
-          
-          <button
-            className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-            onClick={finishAfterCall}
-          >
-            Finish After Call
-          </button>
-        </div>
-      </div>
-    );
+    return <CallManagerAfterCall />;
   }
 
   if (callOperatorState.state === 'error') {
