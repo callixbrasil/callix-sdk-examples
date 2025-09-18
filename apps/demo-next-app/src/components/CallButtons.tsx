@@ -8,9 +8,9 @@ interface CallButtonsProps {
 }
 
 export function CallButtons({ isConnected }: CallButtonsProps) {
-  const { answer, reject, hangup, hold, unhold, isOnHold } = useCallOperatorCurrentCallControls();
+  const { answer, reject, hangup, hold, unhold } = useCallOperatorCurrentCallControls();
 
-  const [onHold, setOnHold] = useState(isOnHold()?.local ?? false);
+  const [onHold, setOnHold] = useState(false);
 
   function toggleHold() {
     const newOnHold = !onHold;
