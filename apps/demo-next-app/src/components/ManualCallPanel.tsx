@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { useCallOperator, useCallOperatorState } from '@callixbrasil/client-sdk-react';
 import { isValidPhoneNumber } from 'libphonenumber-js';
@@ -13,7 +13,7 @@ const validatePhoneNumber = (phoneNumber: string) => {
   if (!isValid) {
     return 'Invalid phone number';
   }
-  
+
   return null;
 };
 

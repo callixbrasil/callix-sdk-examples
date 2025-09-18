@@ -93,7 +93,7 @@ export function CallManager() {
           <div className="p-6 space-y-6">
             {/* Call timer (only show when connected) */}
             <CallTimer call={callOperatorState.call} />
-            
+
             {/* Call control buttons */}
             <CallButtons isConnected={false} />
             {/* Call info section */}
@@ -102,7 +102,6 @@ export function CallManager() {
         </div>
       </div>
     );
-    
   }
 
   if (callOperatorState.state === 'callInProgress') {

@@ -11,9 +11,7 @@ export function CallInfoDisplay() {
   }
 }
 
-export function CampaignCallInfoDisplay(props: {
-  campaignCallInfo: CampaignCallInfo;
-}) {
+export function CampaignCallInfoDisplay(props: { campaignCallInfo: CampaignCallInfo }) {
   const { campaign, campaignList, campaignContact } = props.campaignCallInfo;
 
   return (
