@@ -7,6 +7,7 @@ import { CallDetails } from './CallDetails';
 import { CallInfoDisplay } from './CallInfoDisplay';
 import { CallManagerAfterCall } from './CallManagerAfterCall';
 import { CallTimer } from './CallTimer';
+import { ManualCallPanel } from './ManualCallPanel';
 import { RingingAnimation } from './RingingAnimation';
 
 export function CallManager() {
@@ -32,9 +33,12 @@ export function CallManager() {
   if (callOperatorState.state === 'idle') {
     return (
       <div className="flex flex-col items-center justify-center p-8">
-        <div className="bg-gray-50 p-8 rounded-lg shadow-sm text-center">
-          <h2 className="text-xl font-medium mb-2">No Active Call</h2>
-          <p className="text-gray-600">Waiting for incoming calls...</p>
+        <div className="bg-gray-50 p-8 rounded-lg shadow-sm w-full max-w-md space-y-6">
+          <div className="text-center space-y-2">
+            <h2 className="text-xl font-medium">No Active Call</h2>
+            <p className="text-gray-600">You can place a manual outbound call below.</p>
+          </div>
+          <ManualCallPanel />
         </div>
       </div>
     );
@@ -77,6 +81,28 @@ export function CallManager() {
         </div>
       </div>
     );
+  }
+
+  if (callOperatorState.state === 'manualCallSetup' || callOperatorState.state === 'manualCallRinging') {
+    return (
+      <div className="flex flex-col gap-6 w-full max-w-lg mx-auto p-4">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+          <div className="bg-blue-600 text-white p-4">
+            <h2 className="text-xl font-semibold text-center">Call in Progress</h2>
+          </div>
+          <div className="p-6 space-y-6">
+            {/* Call timer (only show when connected) */}
+            <CallTimer call={callOperatorState.call} />
+            
+            {/* Call control buttons */}
+            <CallButtons isConnected={false} />
+            {/* Call info section */}
+            <CallDetails call={callOperatorState.call} />
+          </div>
+        </div>
+      </div>
+    );
+    
   }
 
   if (callOperatorState.state === 'callInProgress') {
