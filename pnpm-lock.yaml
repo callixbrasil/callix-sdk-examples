@@ -18,11 +18,11 @@ importers:
   apps/demo-next-app:
     dependencies:
       '@callixbrasil/client-sdk':
-        specifier: 0.0.5
-        version: 0.0.5
+        specifier: 0.0.7
+        version: 0.0.7
       '@callixbrasil/client-sdk-react':
-        specifier: 0.0.6
-        version: 0.0.6(@callixbrasil/client-sdk@0.0.5)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        specifier: 0.0.8
+        version: 0.0.8(@callixbrasil/client-sdk@0.0.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@callixbrasil/server-sdk':
         specifier: 0.0.1
         version: 0.0.1
@@ -32,6 +32,9 @@ importers:
       axios:
         specifier: ^1.9.0
         version: 1.9.0
+      libphonenumber-js:
+        specifier: ^1.12.17
+        version: 1.12.17
       next:
         specifier: 15.1.8
         version: 15.1.8(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -728,15 +731,15 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@callixbrasil/client-sdk-react@0.0.6':
-    resolution: {integrity: sha512-mUx8cR8Ko3yFVkBgk2Y0YhUYqFT/F3n4+uwp0Xez7qGF2qMXjHF7wldY5F7iBLVsQgXv7Q2Y/ipKVyL4PPpbkw==, tarball: https://npm.pkg.github.com/download/@callixbrasil/client-sdk-react/0.0.6/be2c4a63665a783ce1ecbe16790fe6f68fc06bc6}
+  '@callixbrasil/client-sdk-react@0.0.8':
+    resolution: {integrity: sha512-NXLohOrKB1Znu8xj2sSoPieXvHlS5ZfLdS3ibgVhtzDVe/VZaOj9mCak2H3Np9hoWcuUavYWcEarE5FmIAuxvA==, tarball: https://npm.pkg.github.com/download/@callixbrasil/client-sdk-react/0.0.8/ba3405c6e92c8e0aa0f00d0cb96a502e98b8a02c}
     peerDependencies:
-      '@callixbrasil/client-sdk': ^0.0.5
+      '@callixbrasil/client-sdk': ^0.0.7
       react: ^19
       react-dom: ^19
 
-  '@callixbrasil/client-sdk@0.0.5':
-    resolution: {integrity: sha512-j7qFrzHUQek0HpEOGV6w9R/WnpcP4t2qUncRtrWjDCdaPPlyk/pYBHLOfL+zEKxZwL2Z50zX06ZztK7BDfN6rw==, tarball: https://npm.pkg.github.com/download/@callixbrasil/client-sdk/0.0.5/b7fdcc5d96f92bff07400dd030406d1afba04d70}
+  '@callixbrasil/client-sdk@0.0.7':
+    resolution: {integrity: sha512-6YEq1iLdwh5HQXjgLzUs4If04gu2yVvihYE+NxmwO/gqIIU0w7feb34TbGZapp3qQ5FV+6+ayDKJhyby/kyAuw==, tarball: https://npm.pkg.github.com/download/@callixbrasil/client-sdk/0.0.7/bb922259186428c07d129bc881660c7345522825}
 
   '@callixbrasil/server-sdk@0.0.1':
     resolution: {integrity: sha512-jEvUlpaelYSdnGU26JsmzmNxLGLmLVQ/vdQuH+zJDg4crVHG1o6iff2i7DXE9PZmoC7I1h5ypHlBbnQQx+RWfQ==, tarball: https://npm.pkg.github.com/download/@callixbrasil/server-sdk/0.0.1/89c68d32b7501c12728bc4b71c0dadcfeee75d1d}
@@ -3057,8 +3060,8 @@ packages:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
 
-  libphonenumber-js@1.12.10:
-    resolution: {integrity: sha512-E91vHJD61jekHHR/RF/E83T/CMoaLXT7cwYA75T4gim4FZjnM6hbJjVIGg7chqlSqRsSvQ3izGmOjHy1SQzcGQ==}
+  libphonenumber-js@1.12.17:
+    resolution: {integrity: sha512-bsxi8FoceAYR/bjHcLYc2ShJ/aVAzo5jaxAYiMHF0BD+NTp47405CGuPNKYpw+lHadN9k/ClFGc9X5vaZswIrA==}
 
   lighthouse-logger@1.4.2:
     resolution: {integrity: sha512-gPWxznF6TKmUHrOQjlVo2UbaL2EJ71mb2CCeRs/2qBpi4L/g4LUVc9+3lKQ6DTUZwJswfM7ainGrLO1+fOqa2g==}
@@ -4220,11 +4223,11 @@ packages:
     resolution: {integrity: sha512-tX5e7OM1HnYr2+a2C/4V0htOcSQcoSTH9KgJnVvNm5zm/cyEWKJ7j7YutsH9CxMdtOkkLFy2AHrMci9IM8IPZQ==}
     engines: {node: '>=12.0.0'}
 
-  tldts-core@6.1.86:
-    resolution: {integrity: sha512-Je6p7pkk+KMzMv2XXKmAE3McmolOQFdxkKw0R8EYNr7sELW46JqnNeTX8ybPiQgvg1ymCoF8LXs5fzFaZvJPTA==}
+  tldts-core@7.0.14:
+    resolution: {integrity: sha512-viZGNK6+NdluOJWwTO9olaugx0bkKhscIdriQQ+lNNhwitIKvb+SvhbYgnCz6j9p7dX3cJntt4agQAKMXLjJ5g==}
 
-  tldts@6.1.86:
-    resolution: {integrity: sha512-WMi/OQ2axVTf/ykqCQgXiIct+mSQDFdH2fkwhPwgEwvJ1kSzZRiinb0zF2Xb8u4+OqPChmyI6MEu4EezNJz+FQ==}
+  tldts@7.0.14:
+    resolution: {integrity: sha512-lMNHE4aSI3LlkMUMicTmAG3tkkitjOQGDTFboPJwAg2kJXKP1ryWEyqujktg5qhrFZOkk5YFzgkxg3jErE+i5w==}
     hasBin: true
 
   tmpl@1.0.5:
@@ -4238,8 +4241,8 @@ packages:
     resolution: {integrity: sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==}
     engines: {node: '>=0.6'}
 
-  tough-cookie@5.1.2:
-    resolution: {integrity: sha512-FVDYdxtnj0G6Qm/DhNPSb8Ju59ULcup3tuJxkFb5K8Bv2pUXILbf0xZWU8PX8Ov19OXljbUyveOFwRMwkXzO+A==}
+  tough-cookie@6.0.0:
+    resolution: {integrity: sha512-kXuRi1mtaKMrsLUxz3sQYvVl37B0Ns6MzfrtV5DvJceE9bPyspOqk9xxv7XbZWcfLWbFmm997vl83qUWVJA64w==}
     engines: {node: '>=16'}
 
   tr46@0.0.3:
@@ -5186,22 +5189,22 @@ snapshots:
   '@biomejs/cli-win32-x64@2.1.1':
     optional: true
 
-  '@callixbrasil/client-sdk-react@0.0.6(@callixbrasil/client-sdk@0.0.5)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@callixbrasil/client-sdk-react@0.0.8(@callixbrasil/client-sdk@0.0.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
-      '@callixbrasil/client-sdk': 0.0.5
+      '@callixbrasil/client-sdk': 0.0.7
       bunshi: 2.1.5(react@19.1.0)
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
     transitivePeerDependencies:
       - vue
 
-  '@callixbrasil/client-sdk@0.0.5':
+  '@callixbrasil/client-sdk@0.0.7':
     dependencies:
       axios: 1.9.0
       eventemitter3: 5.0.1
       faye: 1.4.1
       jssip: 3.10.1
-      libphonenumber-js: 1.12.10
+      libphonenumber-js: 1.12.17
       lodash: 4.17.21
       xstate: 4.38.3
     transitivePeerDependencies:
@@ -7045,9 +7048,9 @@ snapshots:
       '@typescript-eslint/eslint-plugin': 8.34.0(@typescript-eslint/parser@8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3)
       '@typescript-eslint/parser': 8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3)
       eslint: 9.28.0(jiti@1.21.7)
-      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint@9.28.0(jiti@1.21.7)))(eslint@9.28.0(jiti@1.21.7))
+      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.31.0)(eslint@9.28.0(jiti@1.21.7))
       eslint-plugin-expo: 0.1.4(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3)
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint@9.28.0(jiti@1.21.7)))(eslint@9.28.0(jiti@1.21.7)))(eslint@9.28.0(jiti@1.21.7))
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.28.0(jiti@1.21.7))
       eslint-plugin-react: 7.37.5(eslint@9.28.0(jiti@1.21.7))
       eslint-plugin-react-hooks: 5.2.0(eslint@9.28.0(jiti@1.21.7))
       globals: 16.2.0
@@ -7065,7 +7068,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint@9.28.0(jiti@1.21.7)))(eslint@9.28.0(jiti@1.21.7)):
+  eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.31.0)(eslint@9.28.0(jiti@1.21.7)):
     dependencies:
       '@nolyfill/is-core-module': 1.0.39
       debug: 4.4.1
@@ -7076,18 +7079,18 @@ snapshots:
       tinyglobby: 0.2.14
       unrs-resolver: 1.9.0
     optionalDependencies:
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint@9.28.0(jiti@1.21.7)))(eslint@9.28.0(jiti@1.21.7)))(eslint@9.28.0(jiti@1.21.7))
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.28.0(jiti@1.21.7))
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint@9.28.0(jiti@1.21.7)))(eslint@9.28.0(jiti@1.21.7)))(eslint@9.28.0(jiti@1.21.7)):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1)(eslint@9.28.0(jiti@1.21.7)):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
       '@typescript-eslint/parser': 8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3)
       eslint: 9.28.0(jiti@1.21.7)
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint@9.28.0(jiti@1.21.7)))(eslint@9.28.0(jiti@1.21.7))
+      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.31.0)(eslint@9.28.0(jiti@1.21.7))
     transitivePeerDependencies:
       - supports-color
 
@@ -7100,7 +7103,7 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint@9.28.0(jiti@1.21.7)))(eslint@9.28.0(jiti@1.21.7)))(eslint@9.28.0(jiti@1.21.7)):
+  eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.28.0(jiti@1.21.7)):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.9
@@ -7111,7 +7114,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.28.0(jiti@1.21.7)
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint@9.28.0(jiti@1.21.7)))(eslint@9.28.0(jiti@1.21.7)))(eslint@9.28.0(jiti@1.21.7))
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.34.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1)(eslint@9.28.0(jiti@1.21.7))
       hasown: 2.0.2
       is-core-module: 2.16.1
       is-glob: 4.0.3
@@ -7448,7 +7451,7 @@ snapshots:
       csprng: 0.1.2
       faye-websocket: 0.11.4
       safe-buffer: 5.2.1
-      tough-cookie: 5.1.2
+      tough-cookie: 6.0.0
       tunnel-agent: 0.6.0
 
   fb-watchman@2.0.2:
@@ -8047,7 +8050,7 @@ snapshots:
       prelude-ls: 1.2.1
       type-check: 0.4.0
 
-  libphonenumber-js@1.12.10: {}
+  libphonenumber-js@1.12.17: {}
 
   lighthouse-logger@1.4.2:
     dependencies:
@@ -9407,11 +9410,11 @@ snapshots:
       fdir: 6.4.6(picomatch@4.0.2)
       picomatch: 4.0.2
 
-  tldts-core@6.1.86: {}
+  tldts-core@7.0.14: {}
 
-  tldts@6.1.86:
+  tldts@7.0.14:
     dependencies:
-      tldts-core: 6.1.86
+      tldts-core: 7.0.14
 
   tmpl@1.0.5: {}
 
@@ -9421,9 +9424,9 @@ snapshots:
 
   toidentifier@1.0.1: {}
 
-  tough-cookie@5.1.2:
+  tough-cookie@6.0.0:
     dependencies:
-      tldts: 6.1.86
+      tldts: 7.0.14
 
   tr46@0.0.3: {}
 
