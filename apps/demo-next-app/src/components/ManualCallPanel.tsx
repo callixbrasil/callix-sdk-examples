@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallOperator, useCallOperatorState } from '@callixbrasil/client-sdk-react';
+import { useCallOperatorControls, useCallOperatorState } from '@callixbrasil/client-sdk-react';
 import { isValidPhoneNumber } from 'libphonenumber-js';
 import { useCallback, useEffect, useState } from 'react';
 
@@ -21,7 +21,7 @@ const validatePhoneNumber = (phoneNumber: string) => {
  * Panel that allows the operator to place a manual outbound call when idle.
  */
 export function ManualCallPanel() {
-  const callOperator = useCallOperator();
+  const { makeManualCall } = useCallOperatorControls();
   const operatorState = useCallOperatorState();
   const [phoneNumber, setPhoneNumber] = useState('');
   const [isCalling, setIsCalling] = useState(false);
@@ -47,13 +47,13 @@ export function ManualCallPanel() {
 
     try {
       setIsCalling(true);
-      callOperator.makeManualCall(phoneNumberTrimmed);
+      makeManualCall(phoneNumberTrimmed);
     } catch (e) {
       console.error(e);
       setError('Failed to start call');
       setIsCalling(false);
     }
-  }, [phoneNumber, callOperator]);
+  }, [phoneNumber, makeManualCall]);
 
   return (
     <div className="space-y-4">
