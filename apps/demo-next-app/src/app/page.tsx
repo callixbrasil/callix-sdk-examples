@@ -2,6 +2,7 @@
 import { CallixClientProvider } from '@callixbrasil/client-sdk-react';
 import { useQuery } from '@tanstack/react-query';
 import { CallManager } from '../components/CallManager';
+import { StatusPanel } from '../components/StatusPanel';
 
 export default function Home() {
   const queryUserSdkSession = useQuery({
@@ -51,6 +52,7 @@ function PageContent() {
         </header>
 
         <main>
+          <StatusPanel />
           <CallManager />
         </main>
       </div>

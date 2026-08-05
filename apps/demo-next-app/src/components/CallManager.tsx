@@ -44,7 +44,7 @@ export function CallManager() {
     );
   }
 
-  if (callOperatorState.state === 'onBreak') {
+  if (callOperatorState.state === 'onBreak' && callOperatorState.break) {
     const serviceBreak = callOperatorState.break;
 
     return (
