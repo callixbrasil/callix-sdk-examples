@@ -1,7 +1,11 @@
 packages:
   - apps/*
+
 allowBuilds:
   sharp: true
   unrs-resolver: true
+  '@biomejs/biome': true
+  esbuild: true
+
 minimumReleaseAgeExclude:
   - '@callixbrasil/client-sdk@0.0.9'
