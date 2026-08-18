@@ -20,14 +20,14 @@ importers:
   apps/demo-next-app:
     dependencies:
       '@callixbrasil/client-sdk':
-        specifier: 0.0.9
-        version: 0.0.9
+        specifier: ^1.1.0
+        version: 1.1.0
       '@callixbrasil/client-sdk-react':
-        specifier: 0.0.9
-        version: 0.0.9(@callixbrasil/client-sdk@0.0.9)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+        specifier: ^1.1.0
+        version: 1.1.0(@callixbrasil/client-sdk@1.1.0)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       '@callixbrasil/server-sdk':
-        specifier: 0.0.1
-        version: 0.0.1
+        specifier: ^1.0.0
+        version: 1.0.0
       '@tanstack/react-query':
         specifier: ^5.76.2
         version: 5.100.14(react@19.2.6)
@@ -737,18 +737,18 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@callixbrasil/client-sdk-react@0.0.9':
-    resolution: {integrity: sha512-A5i9e+1u7alJRQ2c68WJxhgHhRdQIawwBWfh1HA2tzMoWcQRdjtgFYIEnPB8wSC1kE7ftWmy7Lc89jQmTuJgTw==}
+  '@callixbrasil/client-sdk-react@1.1.0':
+    resolution: {integrity: sha512-kwKef6o/xnaPM5+I1Av5RoBVT0ZMJlsvJSjw0/atdF0qU6XM7cMrBoUu8LinZk8k6pSAhacAhL/krZBXAMhN7g==}
     peerDependencies:
-      '@callixbrasil/client-sdk': ^0.0.8
+      '@callixbrasil/client-sdk': ^1.1.0
       react: ^19
       react-dom: ^19
 
-  '@callixbrasil/client-sdk@0.0.9':
-    resolution: {integrity: sha512-tRqYXLek96a4CoA2odkvDeQW+DAvoupv/Qpln0NcBKq7YaRaAuNTm8w2Qbmu8359Ea1IxuPM8cIKdukQplsztg==}
+  '@callixbrasil/client-sdk@1.1.0':
+    resolution: {integrity: sha512-sdrhvGW6qGed6uCHB5sYZk6kEwv1PJ4IM42F4U4q4fNx4oOmWPML/5mFm/WquvBESzNhxsELmnPzi8BxTVMzNw==}
 
-  '@callixbrasil/server-sdk@0.0.1':
-    resolution: {integrity: sha512-yFv08eOthsGnroZf9IvhD7W/2nv8llHeO2zJU3fm3MPzEaBtHSS1QJYUw0U5eX0lCeBN2/c+JUfaX1uDgGZUSg==}
+  '@callixbrasil/server-sdk@1.0.0':
+    resolution: {integrity: sha512-AMS84RcA3gBeDq6SzAm46ILkwzuD7MZlZuE/Zt6VteWYv9daWa0VonU7xj+r0LaaTppHroHY4RSGudz7IBplRA==}
 
   '@egjs/hammerjs@2.0.17':
     resolution: {integrity: sha512-XQsZgjm2EcVUiZQf11UBJQfmZeEmOW8DpI1gsFeln6w0ae0ii4dMQEQ0kjl6DspdWX1aGY1/loyXnP0JS06e/A==}
@@ -5270,16 +5270,16 @@ snapshots:
   '@biomejs/cli-win32-x64@2.4.16':
     optional: true
 
-  '@callixbrasil/client-sdk-react@0.0.9(@callixbrasil/client-sdk@0.0.9)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
+  '@callixbrasil/client-sdk-react@1.1.0(@callixbrasil/client-sdk@1.1.0)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
-      '@callixbrasil/client-sdk': 0.0.9
+      '@callixbrasil/client-sdk': 1.1.0
       bunshi: 2.2.0(react@19.2.6)
       react: 19.2.6
       react-dom: 19.2.6(react@19.2.6)
     transitivePeerDependencies:
       - vue
 
-  '@callixbrasil/client-sdk@0.0.9':
+  '@callixbrasil/client-sdk@1.1.0':
     dependencies:
       axios: 1.16.1
       eventemitter3: 5.0.4
@@ -5292,7 +5292,7 @@ snapshots:
       - debug
       - supports-color
 
-  '@callixbrasil/server-sdk@0.0.1':
+  '@callixbrasil/server-sdk@1.0.0':
     dependencies:
       axios: 1.16.1
     transitivePeerDependencies:

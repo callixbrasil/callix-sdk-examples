@@ -9,6 +9,7 @@ import { CallManagerAfterCall } from './CallManagerAfterCall';
 import { CallTimer } from './CallTimer';
 import { ManualCallPanel } from './ManualCallPanel';
 import { RingingAnimation } from './RingingAnimation';
+import { StartupErrorMessage } from './StartupErrorMessage';
 
 export function CallManager() {
   const callOperatorState = useCallOperatorState();
@@ -137,14 +138,8 @@ export function CallManager() {
     return <CallManagerAfterCall />;
   }
 
-  if (callOperatorState.state === 'error') {
-    return (
-      <div className="flex flex-col items-center justify-center p-8">
-        <div className="bg-red-50 p-8 rounded-lg shadow-sm text-center">
-          <h2 className="text-xl font-medium mb-2">Error</h2>
-        </div>
-      </div>
-    );
+  if (callOperatorState.state === 'startupError') {
+    return <StartupErrorMessage />;
   }
 
   if (callOperatorState.state === 'offline') {

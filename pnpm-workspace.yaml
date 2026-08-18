@@ -8,4 +8,5 @@ allowBuilds:
   esbuild: true
 
 minimumReleaseAgeExclude:
-  - '@callixbrasil/client-sdk@0.0.9'
+  - '@callixbrasil/client-sdk@0.0.9 || 1.1.0'
+  - '@callixbrasil/client-sdk-react@1.1.0'
