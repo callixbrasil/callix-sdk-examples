@@ -90,27 +90,6 @@ export function CampaignCallInfoDisplay(props: { campaignCallInfo: CampaignCallI
             </div>
           </div>
         )}
-
-        {/* Display scheduled call info */}
-        {campaignContact.scheduledCall && (
-          <div className="mt-2 pt-2 border-t border-blue-100">
-            <p className="font-medium mb-1">Scheduled Call:</p>
-            <div className="pl-2 border-l-2 border-blue-200">
-              <div className="flex justify-between">
-                <span className="text-gray-600">Scheduled at:</span>
-                <span>{campaignContact.scheduledCall.scheduledAt || 'Not provided'}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-gray-600">Created by:</span>
-                <span>{campaignContact.scheduledCall.createdBy}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-gray-600">Note:</span>
-                <span>{campaignContact.scheduledCall.note || '-'}</span>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );
